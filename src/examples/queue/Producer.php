@@ -8,7 +8,10 @@
  */
 
 declare(ticks = 1);
-require dirname(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+namespace phpprocess\examples;
+
+require __DIR__.'/../../vendor/autoload.php';
 
 class Producer extends \Jenner\SimpleFork\Process
 {

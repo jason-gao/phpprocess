@@ -6,8 +6,9 @@
  * @datetime: 2015/11/25 11:07
  */
 
-require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+namespace phpprocess\examples;
 
+require __DIR__.'/../../vendor/autoload.php';
 
 $pid = pcntl_fork();
 

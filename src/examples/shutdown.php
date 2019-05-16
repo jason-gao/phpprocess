@@ -7,7 +7,11 @@
  */
 
 declare(ticks = 1);
-require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+namespace phpprocess\examples;
+
+require __DIR__.'/../../vendor/autoload.php';
+
 
 class TestRunnable implements \Jenner\SimpleFork\Runnable
 {
@@ -26,5 +30,5 @@ class TestRunnable implements \Jenner\SimpleFork\Runnable
 
 $process = new \Jenner\SimpleFork\Process(new TestRunnable());
 $process->start();
-sleep(5);
+sleep(10);
 $process->shutdown();

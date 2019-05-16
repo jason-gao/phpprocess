@@ -8,7 +8,10 @@
 
 
 declare(ticks = 1);
-require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+namespace phpprocess\examples;
+
+require __DIR__.'/../../vendor/autoload.php';
 
 $process = new \Jenner\SimpleFork\Process(function () {
     for ($i = 0; $i < 3; $i++) {

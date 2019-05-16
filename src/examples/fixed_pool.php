@@ -6,7 +6,9 @@
  * @datetime: 2015/11/19 21:25
  */
 
-require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+namespace phpprocess\examples;
+
+require __DIR__.'/../../vendor/autoload.php';
 
 class TestRunnable implements \Jenner\SimpleFork\Runnable
 {

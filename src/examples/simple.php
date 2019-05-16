@@ -6,7 +6,12 @@
  * Time: 19:09
  */
 
+
+namespace phpprocess\examples;
+
 require __DIR__.'/../../vendor/autoload.php';
+
+
 
 class TestRunnable implements \Jenner\SimpleFork\Runnable
 {

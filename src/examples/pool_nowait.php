@@ -6,13 +6,15 @@
  * Time: 20:38
  */
 
-require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+namespace phpprocess\examples;
+
+require __DIR__.'/../../vendor/autoload.php';
 
 class TestRunnable implements \Jenner\SimpleFork\Runnable
 {
 
     /**
-     * ½ø³ÌÖ´ÐÐÈë¿Ú
+     * ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return mixed
      */
     public function run()
